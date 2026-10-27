@@ -92,7 +92,8 @@ export class AuthController {
     res.cookie(SESSION_COOKIE_NAME, sessionToken, {
       httpOnly: true,
       sameSite: "lax",
-      secure: process.env.NODE_ENV === "production",
+      // secure: process.env.NODE_ENV === "production",
+      secure: false,
       path: "/",
       maxAge: SESSION_MAX_AGE,
     });
@@ -102,7 +103,8 @@ export class AuthController {
     res.clearCookie(SESSION_COOKIE_NAME, {
       httpOnly: true,
       sameSite: "lax",
-      secure: process.env.NODE_ENV === "production",
+      // secure: process.env.NODE_ENV === "production",
+      secure: false,
       path: "/",
     });
   }
