@@ -6,6 +6,7 @@ const LOCAL_ORIGINS = new Set([
   "http://127.0.0.1:3000",
   "http://localhost:3001",
   "http://127.0.0.1:3001",
+  "http://106.53.41.228:8000"
 ]);
 
 /**
